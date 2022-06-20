@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <title>Dev quest - JS intermediário</title>
+</head>
+
+<body>
+    <section class="apresentacao">
+        <div class="container">
+            <h1>FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM!</h1>
+            <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.</p>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <form name="Formulario" action="">
+            <input type="text" id="nome" name="nome" placeholder="Nome completo *" required>
+            <span id="alerta-nome" class="alerta"> </span>
+            <input type="email" id="email" name="email" placeholder="Email *" required>
+            <span id="alerta-email" class="alerta"> </span>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone *" required>
+            <span id="alerta-telefone" class="alerta"> </span>
+            <textarea name="pergunta" id="pergunta" cols="30" rows="10" placeholder="Mensagem *" required></textarea>
+            <span id="alerta-pergunta" class="alerta"> </span>
+            <p>*campos obrigatórios</p>
+            <input type="button" id="botao-enviar" value="Enviar">
+        </form>
+    </section>
+
+    <script type="application/javascript" src="./src/JS/formulario.js"></script>
+</body>
+</html>

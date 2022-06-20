@@ -1,0 +1,110 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "esquerda direita";
+    grid-template-columns: 1fr 1fr;
+    background: url("../Imagens/bg-repeat.jpg") repeat-x ;
+    background-size: contain;
+}
+
+.apresentacao{
+    grid-area: esquerda;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: left;
+    padding: 50px;
+}
+
+.container h1{
+    width: 100%;
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+    
+.container p {
+    width: 40vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.formulario{
+    grid-area: direita;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: left;
+}
+
+form{
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+textarea{
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid;
+    resize: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+}
+
+form p {
+    margin: 10px 0px;
+}
+
+form input[type=text], form input[type=email],form input[type=tel], textarea{
+    padding-left: 10px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+form input[type=text]::placeholder, form input[type=email]::placeholder, form input[type=tel]::placeholder{
+    color:#A8A8A8;
+    opacity: 1;
+}
+
+.alerta{
+    font-size: 10px;
+    color:red;
+    height: 1em;
+}
+
+form input[type=button]{
+    height: 42px;
+    background-color: #3CCC87;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    transition: 0.2s ease;
+}
+
+form input[type=button]:hover{
+    background-color: #2aaa65;
+    font-size: 18px;
+    cursor: pointer;   
+}
